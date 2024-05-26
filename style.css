@@ -1,83 +1,70 @@
+
 body {
     background-color: black; 
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Roboto", sans-serif;
     height: 100vh; 
 }
-.container {
+.card {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    margin-top: 60px;
-   
-    flex-wrap: wrap;
-}
-
-
-.container-section {
-    display: flex;
-   
     flex-direction: column;
-    height: 500px;
+    width: 100%;
+    max-width: 350px;
     background-color: #1f1f1f;
     align-items: center;
-    border-radius: 3%;
-    justify-content: center;
-    width: 20%;
-    border: 1px solid black;
-    margin: 20px;
+    border-radius: 25px;
     padding: 20px;
 
 }
 
-.image img {
+img {
     width: 100px;
     height: 100px;
-    border-radius: 50%; 
+    border-radius: 45px; 
 }
-.text h1 {
+h3,h1,p{
     text-align: center;
+}
+.card-info h1 {
     color: #faf5f5;
     font-size: 22px;
     font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
+    font-weight: 700;
     margin-bottom: 2px; 
 }
 
-.text p {
-    text-align: center;
+.card-info p {
     color: #faf5f5;
     font-size: 15px;
 }
 
-.text h3 {
-    text-align: center;
+.card-info h3 {
     color: yellow;
     font-size: 13px;
-    font-family: "Roboto", sans-serif;
+    font-family:inherit;
     font-weight: 500;
-    font-style: normal;
     margin-top: 3px; 
 }
 
 
-.btn {
+.card-action{
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
     gap: 10px;
     margin-top: 8px;
     width: 100%;
 }
-.btn button {
+.card-action a {
+     
+    display: flex; 
+    justify-content: center;
     padding:12px 30px;
-    border: none;
     font-size: 14px;
-    font-weight: 500;
+    text-decoration: none;
+    justify-content: center;
     border-radius: 10px;
     background-color: #333;
     color: #fff;
